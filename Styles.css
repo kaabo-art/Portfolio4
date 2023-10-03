@@ -1,0 +1,40 @@
+#skills-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+    font: 1.2em 'Roboto', sans-serif;
+  }
+  
+  #skills-container ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+    }
+  
+    #skills-container li {
+      margin-right: 20px;
+    }
+  
+    #normal {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+    }
+  
+    h1, h2 {
+      font-family: 'Lato', sans-serif;
+      font-size: 2em;
+      font-weight: bold;
+      margin-top: 0;
+      margin-bottom: 10px;	
+    }
+  
+    h2 {
+      font-size: 1.5em;
+    }
+  
