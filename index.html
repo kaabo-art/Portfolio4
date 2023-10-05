@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My React App</title>
-    <!-- reference the styles-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="styles.css" />
+    <title>My Portfolio</title>
   </head>
 
-  <body>
-    <div id="root">
-      <h1>Kaarle Mattila</h1>
-    </div>
-    <script type="module" src="./App.js"></script>
+  <body class="container">
+    <nav>
+      <div id="root" >
+        <h1 class="navbar">Kaarle Mattila</h1>
+      </div>
+      <script type="module" src="./App.js"></script>
+    </nav>
+
+    <main>
+      <header class="container">
+          <h2>About me</h1>
+      </header>  
+
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2>About me</h2>
+            <p class="container"> I've made a career shift from forestry economics to coding, driven by a passion for technology and a desire for new challenges. After a brief hiatus, I'm currently dedicated to crafting my portfolio and actively seeking opportunities in the field. My journey in coding is a testament to my commitment to continuous learning and my enthusiasm for the world of programming. </p>
+          </div>
+          <div class="col">
+            <img src="images/coder-img.png" alt="koirakuva" width="200" height="200">
+          </div>
+        </div>
+      </div>
+
+      <style>
+          img:hover {
+              animation:spin 4s linear infinite;
+          }
+          @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+      </style>
+
+      <div class="container">
+        <h2>My skills</h2>
+      </div>
+      <div id="skills-container" class="container">
+      <ul>
+          <li>HTML<img src="images/html5-logo.png" alt="html" width="50" height="50"></li>
+          <li>CSS<img src="images/css-logo.png" alt="css" width="50" height="50"></li>
+          <li>JavaScript<img src="images/JavaScript-logo.png" alt="javascript" width="50" height="50"></li>
+          <li>C#<img src="images/Csharp-logo.png" alt="mongodb" width="50" height="50"></li>
+          <li>Azure<img src="images/azure-logo.png" alt="express" width="50" height="50"></li>       
+          <li>React<img src="images/react-logo.png" alt="react" width="50" height="50"></li>
+          <li>Node.js<img src="images/Node.js-logo.png" alt="nodejs" width="50" height="50"></li>
+      </ul>
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </main>
 
 
-    <header>
-        <h2>About me </h1>
-    </header>
-
-    <img src="images/coder-img.png" alt="koirakuva" width="200" height="200" align="right">
-
-    <style>
-        img:hover {
-            animation:spin 4s linear infinite;
-        }
-        @keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
-    </style>
-
-    <p class="normal"> I've made a career shift from forestry economics to coding, driven by a passion for technology and a desire for new challenges. After a brief hiatus, I'm currently dedicated to crafting my portfolio and actively seeking opportunities in the field. My journey in coding is a testament to my commitment to continuous learning and my enthusiasm for the world of programming. </p>
-
-    <h2>My skills</h2>
-    <div id="skills-container" class="container">
-    <ul>
-        <li>HTML<img src="images/html5-logo.png" alt="html" width="50" height="50"></li>
-        <li>CSS<img src="images/css-logo.png" alt="css" width="50" height="50"></li>
-        <li>JavaScript<img src="images/JavaScript-logo.png" alt="javascript" width="50" height="50"></li>
-        <li>C#<img src="images/Csharp-logo.png" alt="mongodb" width="50" height="50"></li>
-        <li>Azure<img src="images/azure-logo.png" alt="express" width="50" height="50"></li>       
-        <li>React<img src="images/react-logo.png" alt="react" width="50" height="50"></li>
-        <li>Node.js<img src="images/Node.js-logo.png" alt="nodejs" width="50" height="50"></li>
-    </ul>
-    </div>
-</body>
+    <foot class = "navbar">
+      <div>
+        <h2>Contact me</h2>
+      </div>
+      <div id="contact-container" class="container">
+        <ul>
+          <li><a href="https://fi.linkedin.com/in/kaarle-mattila-a92031140" target="_blank"><img src="images/linkedin-logo.png" alt="linkedin" width="50" height="50"></a></li>
+        </ul>
+      </div>
+    </foot>
+  </body>
